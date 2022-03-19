@@ -1,9 +1,84 @@
 body {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: flex;
+    max-width: 600px;
 }
 
 main {
-    font-family: Arial, Helvetica, sans-serif;
     max-width: 800px;
+}
+
+.noMetaQuestionsTitle {
+    font-size: 20px;
+}
+
+.metaQuestions {
+    margin: 20px 0px 20px 0px;
+}
+
+.metaQuestions div {
+    margin-bottom: 12px;
+    padding: 5.3px 0px 5.3px 24px;
+    background: #bfe9f9;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.whyNoMetaQuestionsWrapper {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+}
+
+.whyNoMetaQuestions {
+    font-family: Times, serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+}
+
+.good_bad {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.bad {
+    color: red;
+}
+
+
+.good {
+    color: #20D214;
+}
+
+footer {
+    background: #334;
+    width: 100%;
+    padding: 16px 0px;
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #aaa;
+}
+
+.inspiration {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 802px) {
+    main {
+        padding: 0px 12px;
+    }
 }
