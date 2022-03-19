@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+}
