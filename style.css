@@ -8,11 +8,12 @@ body {
 }
 
 img {
-    display: flex;
-    max-width: 600px;
+    max-width: 100%;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     max-width: 800px;
 }
 
@@ -21,12 +22,15 @@ main {
 }
 
 .metaQuestions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin: 20px 0px 20px 0px;
 }
 
 .metaQuestions div {
     margin-bottom: 12px;
-    padding: 5.3px 0px 5.3px 24px;
+    padding: 5.3px 24px;
     background: #bfe9f9;
     border-radius: 0.25rem;
     font-size: 0.9rem;
@@ -44,7 +48,12 @@ main {
     line-height: 1.5em;
 }
 
+.goodBadWrapper {
+    max-width: 600px;
+}
+
 .good_bad {
+    max-width: 600px;
     font-size: 30px;
     font-weight: 900;
 }
@@ -53,12 +62,12 @@ main {
     color: red;
 }
 
-
 .good {
     color: #20D214;
 }
 
 footer {
+    display: flex;
     background: #334;
     width: 100%;
     padding: 16px 0px;
@@ -72,13 +81,30 @@ footer a {
 }
 
 .inspiration {
-    width: 100%;
-    max-width: 800px;
     margin: 0 auto;
+    width: 800px;
+    padding: 0px 12px;
 }
 
-@media only screen and (max-width: 802px) {
+@media only screen and (max-width: 768px) {
     main {
+        max-width: 768px;
+        margin: 0px 0px 16px;
         padding: 0px 12px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    footer {
+        display: flex;
+        background: #334;
+        width: 100%;
+        padding: 16px 0px;
+        color: #ccc;
+        font-size: 14px;
+        margin-top: 30px;
     }
 }
